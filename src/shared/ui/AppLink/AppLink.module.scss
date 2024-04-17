@@ -1,0 +1,33 @@
+.appLink {
+  transition: 150ms ease-in;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    fill-opacity: 0.8;
+    stroke-opacity: 0.8;
+  }
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.inverted {
+  color: var(--inverted-primary-color);
+}
+
+.size_m {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--font-commissioner);
+  font-weight: 600;
+}
+
+.size_l {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: var(--font-commissioner);
+  font-weight: 600;
+}

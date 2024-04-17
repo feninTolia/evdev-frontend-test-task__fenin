@@ -1,0 +1,24 @@
+@import 'reset';
+@import 'variables/global';
+
+body {
+  font: var(--font-m) var(--font-tenor);
+  color: var(--primary-color);
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.content-page {
+  display: flex;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  flex-shrink: 100;
+  height: calc(100vh - var(--navbar-height));
+  padding: 20px 20px 20px 50px;
+  overflow-y: scroll;
+}
