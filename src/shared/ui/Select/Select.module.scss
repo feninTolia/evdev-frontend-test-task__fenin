@@ -1,0 +1,20 @@
+.readonly {
+  opacity: 0.7;
+}
+
+.select {
+  padding: 0px 8px 0px 0px;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--font-commissioner);
+  font-weight: 600;
+  color: var(--primary-color);
+
+  option {
+    background: var(--bg-color);
+  }
+}

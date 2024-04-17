@@ -1,0 +1,16 @@
+.Navbar {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.navList {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.navItem:nth-child(1) {
+  margin-right: 32px;
+}

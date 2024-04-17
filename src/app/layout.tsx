@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Tenor_Sans, Commissioner } from 'next/font/google';
 import './styles/index.scss';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { Navbar } from '@/widgets/Navbar';
 
 const tenor = Tenor_Sans({
   weight: ['400'],
@@ -34,6 +35,8 @@ export default function RootLayout({
           tenor.variable,
         ])}
       >
+        <Navbar />
+
         {children}
       </body>
     </html>
