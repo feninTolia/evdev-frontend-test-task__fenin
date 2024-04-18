@@ -1,5 +1,6 @@
 .Button {
-  padding: 32px 48px;
+  padding: 0px 48px;
+  height: 80px;
   color: var(--inverted-primary-color);
   cursor: pointer;
   background-color: var(--secondary-color);
@@ -40,13 +41,18 @@
   border-radius: 100%;
 
   &.size_m {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
   }
 
   &.size_l {
     width: 180px;
     height: 180px;
+
+    @media (max-width: 767px) {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 

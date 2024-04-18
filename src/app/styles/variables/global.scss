@@ -1,5 +1,8 @@
 :root {
   // font
+  --font-size-xs: 12px;
+  --font-line-xs: 130%;
+  --font-xs: var(--font-size-xs) / var(--font-line-xs);
   --font-size-s: 15px;
   --font-line-s: 130%;
   --font-s: var(--font-size-s) / var(--font-line-s);
@@ -10,17 +13,22 @@
   --font-line-l: 32px;
   --font-l: var(--font-size-l) / var(--font-line-l);
   --font-size-xl: 100px;
-  --font-line-xl: 100px;
+  --font-line-xl: 100%;
   --font-xl: var(--font-size-xl) / var(--font-line-xl);
   --font-size-xxl: 116px;
-  --font-line-xxl: 116px;
+  --font-line-xxl: 100%;
   --font-xxl: var(--font-size-xxl) / var(--font-line-xxl);
 
   // colors
   --bg-color: #fdf7ee;
-  //   --inverted-bg-color: #0d0789;
   --primary-color: #2b2b2b;
   --inverted-primary-color: #fff;
   --secondary-color: #f6884d;
-  //   --inverted-secondary-color: #009817;
+
+  @media (max-width: 767px) {
+    --font-size-xxl: 55px;
+    --font-size-xl: 50px;
+    --font-size-xs: 15px;
+    --font-size-s: 12px;
+  }
 }

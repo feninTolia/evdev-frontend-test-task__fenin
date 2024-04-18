@@ -5,12 +5,20 @@
   align-self: center;
   max-width: 1440px;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    max-width: 390px;
+  }
 }
 
 .navList {
   display: flex;
   gap: 32px;
   align-items: center;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .navItem:nth-child(1) {

@@ -4,6 +4,22 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  .supportButtonSmall {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 44px;
+    margin-bottom: 84px;
+
+    .supportButtonSmall {
+      display: block;
+    }
+    .supportButtonBig {
+      display: none;
+    }
+  }
 }
 
 .row {
@@ -12,13 +28,40 @@
   justify-content: center;
 }
 
-.actionRow {
+.actionRow,
+.actionCollectionRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 48px;
+
+  div {
+    flex-shrink: 100;
+  }
+}
+
+.actionCollectionRow {
+  position: relative;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 56px;
+
+    .collectionButton {
+      width: 100%;
+    }
+  }
 }
 
 .alterRow {
-  margin-left: -256px;
-  margin-top: -12px;
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  translate: 0 100%;
+
+  @media (max-width: 767px) {
+    top: 28%;
+    right: 8%;
+    left: unset;
+    translate: unset;
+  }
 }

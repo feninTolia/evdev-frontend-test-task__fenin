@@ -17,20 +17,29 @@ export const Hero = memo((props: IHeroProps) => {
         <Text title="RENT / BUY" size={TextSize.XXL} />
       </div>
       <div className={cls.actionRow}>
-        <Button theme={ButtonTheme.OUTLINE}>SUPPORT UKRAINE</Button>
+        <Button theme={ButtonTheme.OUTLINE} className={cls.supportButtonBig}>
+          SUPPORT UKRAINE
+        </Button>
+        <Button
+          theme={ButtonTheme.OUTLINE}
+          rounded
+          className={cls.supportButtonSmall}
+        >
+          S
+        </Button>
         <Text title="REAL ESTATE" size={TextSize.XXL} />
       </div>
-      <div className={cls.actionRow}>
+      <div className={cls.actionCollectionRow}>
         <Text title="WITH SVOY" size={TextSize.XXL} />
-        <Button theme={ButtonTheme.OUTLINE}>WHOLE COLLECTION</Button>
-      </div>
-      <div className={cls.row}>
         <Text
           title="REAL ESTATE AGENCY"
           size={TextSize.S}
           theme={TextTheme.ALTER_FONT}
           className={cls.alterRow}
         />
+        <Button theme={ButtonTheme.OUTLINE} className={cls.collectionButton}>
+          WHOLE COLLECTION
+        </Button>
       </div>
     </div>
   );

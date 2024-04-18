@@ -3,11 +3,21 @@
   margin: 0 auto;
   padding-inline: 120px;
   position: relative;
+
+  @media (max-width: 767px) {
+    padding-inline: 20px;
+    max-width: 390px;
+  }
 }
 
 .offerSection {
   background-color: var(--secondary-color);
   padding-bottom: 136px;
+
+  @media (max-width: 767px) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
 }
 
 .offerText {
@@ -18,24 +28,37 @@
   flex-direction: column;
   align-items: end;
   gap: 46px;
+
+  @media (max-width: 767px) {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    z-index: 1;
+    padding-inline: 40px;
+    align-items: start;
+  }
 }
 
-.offerDescription {
-  width: 350px;
-}
 .offerTitleTop {
   padding-right: 148px;
+  @media (max-width: 767px) {
+    padding-right: 0;
+  }
 }
 .offerTitleBottom {
   margin-top: -28px;
   padding-right: 110px;
+  @media (max-width: 767px) {
+    padding-right: 0;
+  }
 }
 
-.bathroomImg {
-  position: absolute;
-  bottom: -58px;
-  right: 50%;
-  translate: 30%;
+.offerDescription {
+  width: 350px;
+  @media (max-width: 767px) {
+    width: unset;
+  }
 }
 
 .btn {
@@ -43,4 +66,54 @@
   bottom: -76px;
   right: 50%;
   translate: 120%;
+
+  @media (max-width: 767px) {
+    position: static;
+    display: block;
+    margin-inline: auto;
+    margin-top: 60px;
+    translate: unset;
+  }
+}
+
+.houseImage {
+  width: 534px;
+  height: 691px;
+  object-fit: cover;
+  object-position: 92% 0%;
+
+  @media (max-width: 767px) {
+    width: 262px;
+    height: 338px;
+    object-position: 0% 0%;
+  }
+}
+
+.bathroomImage {
+  position: absolute;
+  bottom: -58px;
+  right: 50%;
+  translate: 30%;
+  z-index: 0;
+
+  @media (max-width: 767px) {
+    width: 212px;
+    height: 131px;
+    bottom: unset;
+    top: 283px;
+    right: 16px;
+    translate: 0;
+  }
+}
+
+.heroImage {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 20%;
+
+  @media (max-width: 767px) {
+    width: 358px;
+    height: 208px;
+  }
 }

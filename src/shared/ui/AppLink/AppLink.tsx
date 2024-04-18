@@ -9,7 +9,6 @@ export enum AppLinkTheme {
 }
 export enum AppLinkSize {
   M = 'size_m',
-  L = 'size_l',
 }
 
 interface IAppLinkProps extends LinkProps {
