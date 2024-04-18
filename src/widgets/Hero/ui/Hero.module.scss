@@ -1,0 +1,24 @@
+.Hero {
+  margin-top: 96px;
+  margin-bottom: 136px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alterRow {
+  margin-left: -256px;
+  margin-top: -12px;
+}

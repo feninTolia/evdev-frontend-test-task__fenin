@@ -1,14 +1,20 @@
 :root {
   // font
+  --font-size-s: 15px;
+  --font-line-s: 130%;
+  --font-s: var(--font-size-s) / var(--font-line-s);
   --font-size-m: 16px;
   --font-line-m: 24px;
   --font-m: var(--font-size-m) / var(--font-line-m);
   --font-size-l: 24px;
   --font-line-l: 32px;
   --font-l: var(--font-size-l) / var(--font-line-l);
-  --font-size-xl: 32px;
-  --font-line-xl: 40px;
+  --font-size-xl: 100px;
+  --font-line-xl: 100px;
   --font-xl: var(--font-size-xl) / var(--font-line-xl);
+  --font-size-xxl: 116px;
+  --font-line-xxl: 116px;
+  --font-xxl: var(--font-size-xxl) / var(--font-line-xxl);
 
   // colors
   --bg-color: #fdf7ee;

@@ -7,18 +7,8 @@ body {
 }
 
 .app {
+  // max-width: 1440px;
+  // margin: 0 auto;
   min-height: 100vh;
   background-color: var(--bg-color);
-}
-
-.content-page {
-  display: flex;
-}
-
-.page-wrapper {
-  flex-grow: 1;
-  flex-shrink: 100;
-  height: calc(100vh - var(--navbar-height));
-  padding: 20px 20px 20px 50px;
-  overflow-y: scroll;
 }

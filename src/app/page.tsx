@@ -1,5 +1,63 @@
+import { Hero } from '@/widgets/Hero';
+import Image from 'next/image';
+import House1 from '@/shared/assets/images/house1.jpg';
+import House2 from '@/shared/assets/images/house2.jpg';
+import Bathroom from '@/shared/assets/images/bathroom.jpg';
+import { Text, TextSize, TextTheme } from '@/shared/ui/Text/Text';
+import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
 import cls from './page.module.scss';
 
 export default function MainPage() {
-  return <main className={cls.main}>MainPage</main>;
+  return (
+    <main className={cls.pageWrapper}>
+      <div className={cls.sectionWrapper}>
+        <Hero />
+        <Image
+          src={House1}
+          alt="house"
+          height={140}
+          style={{ width: '100%' }}
+        />
+      </div>
+      <div className={cls.offerSection}>
+        <div className={cls.sectionWrapper}>
+          <Image src={House2} alt="house" height={691} width={534} />
+          <div className={cls.offerText}>
+            <Text
+              className={cls.offerTitleTop}
+              size={TextSize.XL}
+              title="WHAT"
+              theme={TextTheme.INVERTED}
+            />
+            <Text
+              className={cls.offerTitleBottom}
+              size={TextSize.XL}
+              title="WE OFFER"
+              theme={TextTheme.INVERTED}
+            />
+            <Text
+              className={cls.offerDescription}
+              theme={TextTheme.INVERTED}
+              size={TextSize.M}
+              title="Our architecture encourages co-existence. So does our business philosophy. We have abolished barriers of hierarchy and departmentalization to work as a single team. We believe in full transparency — and of course, that entails our clients."
+            />
+          </div>
+          <Image
+            src={Bathroom}
+            alt="bathroom"
+            height={240}
+            width={387}
+            className={cls.bathroomImg}
+          />
+          <Button
+            rounded
+            theme={ButtonTheme.OUTLINE_INVERTED}
+            className={cls.btn}
+          >
+            LEARN MORE
+          </Button>
+        </div>
+      </div>
+    </main>
+  );
 }

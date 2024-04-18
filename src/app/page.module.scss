@@ -1,0 +1,46 @@
+.sectionWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 120px;
+  position: relative;
+}
+
+.offerSection {
+  background-color: var(--secondary-color);
+  padding-bottom: 136px;
+}
+
+.offerText {
+  position: absolute;
+  top: 152px;
+  right: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 46px;
+}
+
+.offerDescription {
+  width: 350px;
+}
+.offerTitleTop {
+  padding-right: 148px;
+}
+.offerTitleBottom {
+  margin-top: -28px;
+  padding-right: 110px;
+}
+
+.bathroomImg {
+  position: absolute;
+  bottom: -58px;
+  right: 50%;
+  translate: 30%;
+}
+
+.btn {
+  position: absolute;
+  bottom: -76px;
+  right: 50%;
+  translate: 120%;
+}
