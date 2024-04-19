@@ -4,12 +4,21 @@
 body {
   font: var(--font-m) var(--font-tenor);
   color: var(--primary-color);
+  height: 100%;
+  overflow: hidden;
+}
+
+body:has(.isMenuClosed) {
+  height: unset;
+  overflow: unset;
 }
 
 .app {
   min-width: 390px;
-  // max-width: 1440px;
-  // margin: 0 auto;
   min-height: 100vh;
   background-color: var(--bg-color);
+}
+
+.isMenuClosed {
+  top: -100% !important;
 }

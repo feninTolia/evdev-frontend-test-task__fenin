@@ -25,10 +25,24 @@
   --inverted-primary-color: #fff;
   --secondary-color: #f6884d;
 
+  //borders
+  --primary-border-color: #2b2b2b33;
+  --secondary-border-color: #f1eade;
+
+  //sizes
+  --navbar-height: 70px;
+
+  // z-index
+  --burger-menu-z-index: 10;
+
+  // at mobile
   @media (max-width: 767px) {
     --font-size-xxl: 55px;
     --font-size-xl: 50px;
     --font-size-xs: 15px;
     --font-size-s: 12px;
+    --font-size-m: 15px;
+
+    --navbar-height: 80px;
   }
 }

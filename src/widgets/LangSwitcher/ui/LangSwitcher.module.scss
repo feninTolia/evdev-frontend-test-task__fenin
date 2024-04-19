@@ -1,0 +1,13 @@
+.mobileButtons {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: flex;
+    gap: 30px;
+  }
+}
+.desktopSelect {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

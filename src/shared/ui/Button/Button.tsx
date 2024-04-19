@@ -6,10 +6,12 @@ export enum ButtonTheme {
   DEFAULT = '',
   CLEAR = 'clear',
   OUTLINE_INVERTED = 'outlineInverted',
+  OUTLINE_GRAY = 'outlineGray',
   OUTLINE = 'outline',
 }
 
 export enum ButtonSize {
+  XS = 'size_xs',
   M = 'size_m',
   L = 'size_l',
 }
