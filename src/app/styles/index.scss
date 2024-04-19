@@ -4,8 +4,11 @@
 body {
   font: var(--font-m) var(--font-tenor);
   color: var(--primary-color);
-  height: 100%;
-  overflow: hidden;
+
+  @media (max-width: 767px) {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 body:has(.isMenuClosed) {

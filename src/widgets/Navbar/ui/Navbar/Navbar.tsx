@@ -26,7 +26,7 @@ const navItems = NavbarItemsList.map((item) => {
 
 export const Navbar = memo((props: INavbarProps) => {
   const { className } = props;
-  const [isMenuClosed, setIsMenuClosed] = useState(false);
+  const [isMenuClosed, setIsMenuClosed] = useState(true);
 
   const onToggleMenu = useCallback(() => {
     setIsMenuClosed((prev) => !prev);

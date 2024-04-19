@@ -3,6 +3,8 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Hero.module.scss';
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
 import { Text, TextSize, TextTheme } from '@/shared/ui/Text/Text';
+import Image from 'next/image';
+import trident from '@/shared/assets/icons/trident.svg';
 
 interface IHeroProps {
   className?: string;
@@ -25,7 +27,13 @@ export const Hero = memo((props: IHeroProps) => {
           rounded
           className={cls.supportButtonSmall}
         >
-          S
+          <Image
+            src={trident}
+            alt="trident"
+            width={20}
+            height={30}
+            style={{ margin: '0 auto' }}
+          />
         </Button>
         <Text title="REAL ESTATE" size={TextSize.XXL} />
       </div>
